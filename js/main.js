@@ -138,3 +138,13 @@ $(window).on("load", function() {
         offset: height
     });
 });
+
+function buttonHover(){
+    let isTouch = !!("ontouchstart" in window)
+     || window.navigator.msMaxTouchPoins > 0;
+    if (isTouch){
+        document.querySelector(".menu__list-btn").classList.add("menu__list-btn-hover-none");
+        document.querySelector(".header__content-link").classList.add("header__content-link-hover-none");
+    }
+}
+buttonHover();

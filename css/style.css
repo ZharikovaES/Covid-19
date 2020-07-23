@@ -114,6 +114,7 @@ button{
     position: fixed;
     top: 0;
     width: 100%;
+    box-shadow: 0px 5px 40px rgba(255, 255, 255, 0.08);
     transition: all 1s;
 }
 .out{
@@ -182,6 +183,10 @@ button{
     background-color: rgba(255, 56, 61, 1);
     color: rgba(255, 255, 255, 1);
 }
+.menu__list-btn-hover-none:hover{
+    background-color: rgba(255, 56, 61, 0);
+    color: rgba(255, 56, 61, 1);
+}
 .menu__list-btn.mPS2id-highlight-first{
     font-size: 0;
     height: 0;
@@ -240,6 +245,11 @@ button{
     background-color: rgba(255, 255, 255, 0);
     color: #FB4C47;
     box-shadow: none;
+}
+.header__content-link-hover-none:hover{
+    color: #FFFFFF;
+    background-color: #FB4C47;
+    box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1);
 }
 
 /*coronavirus*/
@@ -1327,7 +1337,10 @@ button{
     }
     .header__content-link {
         line-height: 22px;
-        padding: 12px 40px 12px;
+        padding: 12px 40px;
+    }
+    .coronavirus__content-link {
+        padding: 12px 40px;
     }
     .jqvmap-operations {
         width: 65px;
@@ -1522,7 +1535,7 @@ button{
         padding: 5px 15px;
     }
     .menu__list-btn {
-        padding: 12px 30px 8px;
+        padding: 12px 30px;
     }
     .menu__list-item-btn {
         padding-left: 0;
