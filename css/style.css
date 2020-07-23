@@ -170,25 +170,26 @@ button{
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
-    color: #FF383D;
+    color: rgba(255, 56, 61, 1);
     padding: 16px 45px 15px;
     border-radius: 30px;
-    border: 2px solid #FF383D;
-    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid rgba(255, 56, 61, 1);
+    background-color: rgba(255, 56, 61, 0);
     transition: all .3s;
     opacity: 1;
 }
 .menu__list-btn:hover{
-    background-color: #FF383D;
-    color: #FFF;
+    background-color: rgba(255, 56, 61, 1);
+    color: rgba(255, 56, 61, 0);
 }
 .menu__list-btn.mPS2id-highlight-first{
     font-size: 0;
     height: 0;
     width: 0;
-    border: none;
+    border: 0 solid rgba(255, 56, 61, 0);
     padding: 0;
     opacity: 0;
+    color: rgba(255, 56, 61, 0);
 }
 .menu__list-item{
     padding: 0 20px;
@@ -757,7 +758,7 @@ button{
     padding-left: 41px;
     padding-right: 41px;
 }
-.question__form-input, .question__form-input::placeholder{
+.question__form-input, .question__form-input::placeholder, .map__form-search-input, .map__form-search-input::placeholder{
     font-size: 20px;
     line-height: 26px;
     color: #758681;
@@ -1274,6 +1275,11 @@ button{
         padding: 50% 0 20px;
     }
 }
+@media(max-width: 765px){
+    .map__form-search {
+        max-width: 400px;
+    }
+}
 @media(max-width: 740px){
     .header__content {
         max-width: 362px;
@@ -1357,7 +1363,6 @@ button{
         height: 56px;
         left: 50%;
         transform: translateX(-50%);
-        width: 80%;
     }
     .map__form-search-input {
         box-shadow: 0px 7px 55px rgba(146, 53, 46, 0.18);
@@ -1511,13 +1516,13 @@ button{
 }
 @media(max-width: 420px){
     .logo {
-        padding-bottom: 10px;
+        padding-bottom: 4px;
     }
     .menu__list-item, .footer__list-item {
         padding: 5px 15px;
     }
     .menu__list-btn {
-        padding: 12px 30px 6px;
+        padding: 12px 30px 8px;
     }
     .menu__list-item-btn {
         padding-left: 0;

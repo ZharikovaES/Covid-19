@@ -133,6 +133,8 @@ document.querySelector(".map__form-search-btn").addEventListener("click", functi
 });
 
 $(window).on("load", function() {
+    let height = $(".header__top").height();
     $("a[rel='m_PageScroll2id']").mPageScroll2id({
+        offset: height
     });
 });
