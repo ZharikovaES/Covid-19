@@ -4,5 +4,4 @@ Used in the project:
 - JQVmap (plugin for creating a political map);
 - FontAwesome;
 - scroll by anchors;
-- animated header;
-- adaptive.
+- animated menu of header.

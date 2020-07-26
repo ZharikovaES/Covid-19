@@ -114,10 +114,10 @@ button{
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0px 5px 40px rgba(255, 255, 255, 0.08);
+    box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.3);
     transition: all 1s;
 }
-.out{
+.header__top--out{
     transform: translateY(-100%);
 }
 .header__top-inner{
@@ -159,10 +159,13 @@ button{
     transition: all .3s;
     opacity: 0;
 }
-.menu__list-link.mPS2id-highlight-first{
+.menu__list-link-hover--none:hover{
+    color: #035755;
+}
+.menu__list-link--active{
     color: #FB4C47;
 }
-.menu__list-link.mPS2id-highlight-first::before{
+.menu__list-link--active::before{
     opacity: 1;
 }
 .menu__list-btn{
@@ -176,24 +179,18 @@ button{
     border-radius: 30px;
     border: 2px solid rgba(255, 56, 61, 1);
     background-color: rgba(255, 56, 61, 0);
-    transition: all .3s;
+    transition: all .4s;
     opacity: 1;
 }
 .menu__list-btn:hover{
     background-color: rgba(255, 56, 61, 1);
     color: rgba(255, 255, 255, 1);
 }
-.menu__list-btn-hover-none:hover{
+.menu__list-btn-hover--none:hover{
     background-color: rgba(255, 56, 61, 0);
     color: rgba(255, 56, 61, 1);
 }
-.menu__list-btn.mPS2id-highlight-first{
-    font-size: 0;
-    height: 0;
-    width: 0;
-    border: 0 solid rgba(255, 56, 61, 0);
-    padding: 0;
-    color: rgba(255, 56, 61, 0);
+.menu__list-btn--active{
     opacity: 0;
 }
 .menu__list-item{
@@ -246,7 +243,7 @@ button{
     color: #FB4C47;
     box-shadow: none;
 }
-.header__content-link-hover-none:hover{
+.header__content-link-hover--none:hover{
     color: #FFFFFF;
     background-color: #FB4C47;
     box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1);
@@ -813,6 +810,9 @@ button{
 }
 .footer__list-link:hover{
     color: #F44A45;
+}
+.footer__list-link-hover--none:hover{
+    color: #00402E;
 }
 .fab{
     font-size: 20px;
@@ -1588,4 +1588,11 @@ button{
         background-position: right -7% top 250px;
         padding-top: 260px;
     }
+}
+
+.menu__list-btn--none{
+    width: 0;
+    padding: 0;
+    font-size: 0;
+    border: none;
 }
